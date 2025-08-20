@@ -1,5 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_opsz\,wght.ttf);
+}
+
+:root{
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsla(0, 0%, 8%, 1.00);
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body{
-    font-family: Inter;
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
 }
+
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: var(--Grey900);
+    color: var(--White);
+    padding: 20px;
+}
+
+.profile-card {
+    padding: 20px;
+    background-color: var(--Grey800);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bio{
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.name{
+    margin-bottom: 15px;
+}
+
+.location, .bio-text {
+    font-size: 14px;
+}
+
+.location{
+    color: var(--Green);
+    margin-bottom: 30px;;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links{
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 500;
+    background-color: var(--Grey700);
+    min-width: 280px;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.links:hover {
+    background-color: var(--Green);
+    color: var(--Grey900);
+}
+
+.links:focus {
+    background-color: var(--Grey900);
+    color: var(--Green);
+}
+
+
+
