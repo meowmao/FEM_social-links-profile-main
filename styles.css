@@ -99,5 +99,12 @@ body{
     color: var(--Green);
 }
 
+.attribution{
+    padding: 5px;
+    background-color: pink;
+    position:absolute;
+    width: 100%;
+    bottom:0px;
+}
 
 
